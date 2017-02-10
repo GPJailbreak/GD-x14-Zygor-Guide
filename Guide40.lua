@@ -414,7 +414,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (50-53
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (53-60)",[[
 	author TTGJailbreak
 	startlevel 53
-	next Aang1's x14 Hoard Leveling Guide (53-60)
+	next Aang1's x14 Hoard Leveling Guide (60-67)
 	step //1
 		'Take the Portal to Popular Places to Everlook|at Winterspring,60.60,38.19|noway
 	step //2
