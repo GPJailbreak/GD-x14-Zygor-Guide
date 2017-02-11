@@ -6,154 +6,167 @@ if UnitFactionGroup("player")~="Horde" then return end
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (10-26)",[[
 	author TTGJailbreak
 	startlevel 10
-	next Aang1's x14 Hoard Leveling Guide (26-31)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (26-31)
 	step //1
 		goto Orgrimmar,54.11,68.39
 		home Orgrimmar
 		'you can get to Orgrimmar faster by using the popular portal
 	step //2
-		goto The Barrens,52.2,31
+		goto The Barrens,52.23,31.01
 		.talk Sergra Darkthorn##3338
 		..accept Plainstrider Menace##844
-		..accept The Zhevra##845
 	step //3
 		goto 51.94,30.32
 		.talk Gazrog##3464
-		..accept Raptor Thieves##363
-		..accept Stolen Silver##3281
+		..accept Raptor Thieves##869
 	step //4
 		goto 51.51,30.34
 		.fpath The Crossroads
 	step //5
+		goto 53.37,33.29
+		.collect 7 Plainstrider Beak|q 844/1
+		.collect 12 Raptor Head|q 869/1
+	step //6
+		ding 14
+	step //7
 		goto 51.95,31.57
 		.talk Mankrik##3432
 		..accept Lost in Battle##4921
-	step //6
-		goto 53.37,33.29
-		.collect 7 Plainstrider Beaks##5087
-		'you can also collect the Zhevra Hooves/Raptor Heads as you go.
-	step //7
-		goto 54,37.76
-		.collect 4 Zhevra Hooves##5086
 	step //8
-		goto 58.04,53.87
-		.collect 12 Raptor Heads##5062
-		.collect 1 Stolen Silver##5061
+		goto 51.94,30.32
+		.talk Gazrog##3464
+		..turnin Raptor Thieves##869
+		..accept Stolen Silver##3281
 	step //9
+		goto The Barrens,52.23,31.01
+		.talk Sergra Darkthorn##3338
+		..turnin Plainstrider Menace##844
+		..accept The Zhevra##845
+	step //10
+		goto 58.04,53.87
+		.collect 1 Stolen Silver|q 3281/1
+		.collect 4 Zhevra Hooves|q 845/1
+		'Get the Zhevra Hooves as you travel to this spot
+	step //11
 		goto 49.33,50.33
 		.' Click the Beaten Corpse and inspect it further |tip In a small camp of 2 houses to the side of the road.
 		.' Find Mankrik's Wife|goal Find Mankrik's Wife|q 4921/1
-	step //10
+	step //12
 		goto 44.45,59.14
 		.fpath Camp Taurajo
 		'Use this flight path to go back to The Crossroads.
-	step //11
+	step //13
 		goto 51.94,30.32
 		.talk Gazrog##3464
-		..turnin Raptor Thieves##363
 		..turnin Stolen Silver##3281
-	step //12
-		goto The Barrens,52.2,31
+	step //14
+		goto The Barrens,52.23,31.01
 		.talk Sergra Darkthorn##3338
-		..turnin Plainstrider Menace##844
 		..turnin The Zhevra##845
-	step //13
+	step //15
 		goto 51.95,31.57
 		.talk Mankrik##3432
 		..turnin Lost in Battle##4921
-	step //14 
-		'Fly back to Camp Taurajo then manually skip this step.
-	step //15
-		goto 45.81,77.31
+	step //16
+		'Fly back to Camp Taurajo|at 44.45,59.09|noway
+	step //17
+		goto 46,76.66
 		.talk Gann Stonespire##3341
 		.accept Gann's Reclamation##843
-	step //16
+	step //18
 		goto 46.19,84.84
 		'Go Down Here
-	step //17
+	step //19
 		goto 47.48,85.10
-		.kill 5 Bael'dun Foreman|q 843/2
 		.kill 15 Bael'dun Excavator|q 843/1
-		.collect Khazgorm's Journal##5006
-	step //18
-		goto 45.81,77.31
+		.kill 5 Bael'dun Foreman|q 843/2
+		.collect Khazgorm's Journal|q 843/3
+	step //20
+		goto 46,76.66
 		.talk Gann Stonespire##3341
 		..turnin Gann's Reclamation##843
 		..accept Revenge Of Gann##846
-	step //19
+	step //21
 		goto 48.66,84.54
 		'Kill all of the mobs around this area.
 		.collect 6 Nitroglycerin##5017
 		.collect 6 Wood Pulp##5018
 		.collect 6 Sodium Nitrate##5019
-	step //20
-		goto 45.81,77.31
+	step //22
+		goto 46,76.66
 		.talk Gann Stonespire##3341
 		.turnin Revenge Of Gann##846
 		.accept Revenge Of Gann (2)##849
-	step //21
+	step //23
 		goto 46.90,85.63
 		'Go up the ramp here
 		.goal Bael Modan Flying Machine destroyed|q 849/1
-	step //22
-		goto 45.81,77.31
+	step //24
+		goto 46,76.66
 		.talk Gann Stonespire##3341
 		.turnin Revenge Of Gann (2)##849
-	step //23
+	step //24
 		ding 26
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (26-31)",[[
 	author TTGJailbreak
 	startlevel 26
-	next Aang1's x14 Hoard Leveling Guide (31-42)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (31-42)
 	step //1
 		goto Orgrimmar,45.13,63.89
 		'Take the flight master to Camp Taurajo.
 	step //2
-		goto Thousand Needles,47.28,48.87
-		'Go up here.
+		goto Thousand Needles,32.24,22.16
+		.talk Brave Moonhorn##10079
+		..accept Message to Freewind Post##4542
 	step //3
-		goto 45.13,49.14
-		.fpath Freewind Post
+		goto 46.72,47.98
+		'Go up here.
 	step //4
-		goto 44.65,50.27
-		.talk Hagar Lightninghoof##10539
-		..accept Alien Egg##4821
-	step //5
 		goto 46,50.85
 		'Click the wanted poster.
 		.accept Wanted - Arnak Grimtotem##5147
+	step //5
+		goto 45.68,50.73
+		.talk Cliffwatcher Longhorn##10537
+		..turnin Message to Freewind Post##4542
 	step //6
-		goto 37.66,56
-		.collect Alien Egg|q 4821/1
-		'If it's not at this cave entrence then walk east along the cliff, the spawns are random.
+		goto 45.13,49.14
+		.fpath Freewind Post
 	step //7
+		goto 44.65,50.27
+		.talk Hagar Lightninghoof##10539
+		..accept Alien Egg##4821
+	step //8
+		goto 52.34,55.23
+		.collect Alien Egg|q 4821/1
+	step //9
 		goto 31.08,37.02
 		'go up the mountain here.
-	step //8
+	step //10
 		goto 38.71,27.36
 		.kill Arnak Grimtotem|n
 		.collect Arnak's Hoof|q 5147/1
-	step //9
-		goto Thousand Needles,47.28,48.87
+	step //11
+		goto 46.72,47.98
 		'Go up here.
-	step //10
+	step //12
 		goto 45.68,50.73
 		.talk Cliffwatcher Longhorn##10537
 		..turnin Wanted - Arnak Grimtotem##5147
-	step //11
+	step //13
 		goto 44.65,50.27
 		.talk Hagar Lightninghoof##10539
 		..turnin Alien Egg##4821
-	step //12
+	step //14
 		ding 31
 ]])
 
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (31-42)",[[
 	author TTGJailbreak
 	startlevel 31
-	next Aang1's x14 Hoard Leveling Guide (42-50)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (31-42
 	step //1
 		goto Durotar,50.71,12.92
 		'Take the Zeppelin to Stranglethorn Vale.
@@ -268,7 +281,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (31-42
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (42-50)",[[
 	author TTGJailbreak
 	startlevel 42
-	next Aang1's x14 Hoard Leveling Guide (50-53)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (50-53)
 	step //1
 		goto Orgrimmar,51.49,81.94
 		'Use the Portal to Popular Places to teleport to Gadgetzan
@@ -366,7 +379,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (42-50
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (50-53)",[[
 	author TTGJailbreak
 	startlevel 50
-	next Aang1's x14 Hoard Leveling Guide (53-60)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (53-60)
 	step //1
 		goto Tanaris,27.09,57.45
 		'This is the closest entrence by Gadgetzan to the Un'Goro Crater.
@@ -414,7 +427,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (50-53
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (53-60)",[[
 	author TTGJailbreak
 	startlevel 53
-	next Aang1's x14 Hoard Leveling Guide (60-67)
+	next Aang1's x14 Hoard Leveling Guide\\Levels (60-67)
 	step //1
 		'Take the Portal to Popular Places to Everlook|at Winterspring,60.60,38.19|noway
 	step //2
@@ -524,5 +537,11 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (53-60
 		.talk Warlord Dar'toon##19254
 		..accept Through the Dark Portal##9407
 		
+]])
+
+ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (60-67)",[[
+	author TTGJailbreak
+	startlevel 60
+	next Aang1's x14 Hoard Leveling Guide (60-67)
 ]])
 ZygorGuidesViewer.HordeInstalled=true --!TRIAL
