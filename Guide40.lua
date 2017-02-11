@@ -166,7 +166,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (26-31
 ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (31-42)",[[
 	author TTGJailbreak
 	startlevel 31
-	next Aang1's x14 Hoard Leveling Guide\\Levels (31-42
+	next Aang1's x14 Hoard Leveling Guide\\Levels (42-50)
 	step //1
 		goto Durotar,50.71,12.92
 		'Take the Zeppelin to Stranglethorn Vale.
@@ -184,53 +184,53 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (31-42
 		..accept Bloody Bone Necklaces##596
 		..accept The Vile Reef##629
 	step //5
-		goto 32.17,28.90
-		.talk Commander Aggro'gosh##2464
-		.accept The Defense of Grom'gol##568
-	step //6
 		goto 32.54,29.35
 		.fpath Grom'gol Base Camp
-	step //7
+	step //6
 		goto 24.83,23.03
 		.collect Tablet Shard|q 629/1
-	step //8
+	step //7
 		goto 29.51,20.02
 		.kill Bloodscalp mobs|n
 		'There are more around 33.89,16.26|noway
-		.collect 25 Bloody Bone Necklace##3915
-		.collect 9 Bloodscalp Tusk##3901
-		.collect 1 Bloodscalp Totem##23679
-	step //9
-		goto 31.34,23.48
-		.kill 15 Lashtail Raptors|q 568/1
-		'They spawn all around the basecamp as well.
-	step //10
+		.collect 25 Bloody Bone Necklace|q 596/1
+		.collect 9 Bloodscalp Tusk|q 581/1
+		.collect 1 Bloodscalp Totem|q 9436/1
+	step //8
 		goto 32.15,27.74
 		.talk Nimboya##2497
 		.turnin Hunt for Yenniku##581
-	step //11
+	step //9
 		goto 32.26,27.71
 		.talk Kin'weelay##2519
 		.turnin Bloody Bone Necklaces##596
 		.turnin The Vile Reef##629
-	step //12
+	step //10
 		goto 31.97,28.62
 		.talk Nemeth Hawkeye##17094
 		.turnin Bloodscalp Insight##9436
 		..accept An Unusual Patron##9457
-	step //13
+	step //11
 		goto 32.17,28.90
 		.talk Commander Aggro'gosh##2464
-		.turnin The Defense of Grom'gol##568
-	step //14
+		.accept The Defense of Grom'gol##568
+	step //12
+		goto 31.34,23.48
+		.kill 15 Lashtail Raptors|q 568/1
+		'They spawn all around the basecamp as well.
+	step //13
 		goto 19.80,22.58
 		.use Gift of Naias##23680
 		.kill Naias|n
 		.collect Heart of Naias|q 9457/1
-	step //15
+	step //14
 		goto 31.97,28.62
 		.talk Nemeth Hawkeye##17094
 		.turnin An Unusual Patron##9457
+	step //15
+		goto 32.17,28.90
+		.talk Commander Aggro'gosh##2464
+		.turnin The Defense of Grom'gol##568
 	step //16
 		goto 26.69,73.61
 		'Hearth or take the zeppelin back to Orgrimmar|at Orgrimmar,54.06,68.55|noway
@@ -246,34 +246,35 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (31-42
 		.talk "Sea Wolf" MacKinley##2501
 		.accept Scaring Shaky##606
 	step //19
-		goto 36.60,69.38
-		.kill Gorlash|n
-		..collect Smotts' Chest|q 8551/1
-	step //20
 		goto 31.92,67.03
 		.kill Mistvale Gorilla|n
-		..collect 5 Mistvale Giblets|q 606/18
-	step //21
+		..collect 5 Mistvale Giblets|q 606/1
+	step //20
 		goto 27.28,69.52
 		Check out the cove North of Booty Bay|q 595/1
 		.turnin The Bloodsail Buccaneers##595
 		..accept The Bloodsail Buccaneers (2)##597
-	step //22
+	step //21
 		goto 26.90,73.59
 		.talk "Shaky" Phillipe##2502
 		..turnin Scaring Shaky##606
 		..accept Return to MacKinley##607
-	step //23
-		goto 26.69,73.61
-		.turnin The Captain`s Chest##8551
-	step //24
+	step //22
 		goto 28.09,76.21
 		.talk First Mate Crazz##2490
 		..turnin The Bloodsail Buccaneers (2)##597
-	step //25
+	step //23
 		goto 27.78,77.07
 		.talk "Sea Wolf" MacKinley##2501
 		..turnin Return to MacKinley##607
+	step //24
+	goto 36.60,69.38
+		.kill Gorlash|n
+		..collect Smotts' Chest|q 8551/1
+		'If you can't kill him try to find another person or just grind mobs to 42 you're likely close.
+	step //25
+		goto 26.69,73.61
+		.turnin The Captain`s Chest##8551
 	step //26
 		ding 42
 ]])
@@ -283,7 +284,7 @@ ZygorGuidesViewer:RegisterGuide("Aang1's x14 Hoard Leveling Guide\\Levels (42-50
 	startlevel 42
 	next Aang1's x14 Hoard Leveling Guide\\Levels (50-53)
 	step //1
-		goto Orgrimmar,51.49,81.94
+		goto Stranglethorn Vale,27.46,76.78
 		'Use the Portal to Popular Places to teleport to Gadgetzan
 		'This saves a lot of time, if you have no vote points go get some...
 	step //2
